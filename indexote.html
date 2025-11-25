@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Ejercicios Web - Rediseño</title>
+    <style>
+        :root {
+            --color-primary: #34495e;
+            --color-secondary: #3498db;
+            --color-background: #ecf0f1;
+            --color-text-light: #ffffff;
+            --color-text-dark: #2c3e50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--color-background);
+            color: var(--color-text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--color-primary);
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            border-bottom: 3px solid var(--color-secondary);
+            padding-bottom: 10px;
+        }
+
+        /* Diseño de Cuadrícula con Tarjetas - MODIFICADO */
+        .portfolio-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px; /* Reducido para más densidad */
+            margin-bottom: 20px; /* Reducido */
+        }
+
+        .portfolio-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px; /* Reducido */
+            height: 60px; /* Reducido */
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            text-decoration: none;
+            text-align: center;
+            border-radius: 8px; /* Redondeo menor */
+            font-weight: 600;
+            font-size: 0.9em; /* Fuente más pequeña */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+            transition: all 0.3s ease;
+            border: 3px solid var(--color-primary);
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            background-color: var(--color-secondary);
+            color: var(--color-text-light);
+            border-color: var(--color-primary);
+        }
+        
+        .preview-container {
+            border: 5px solid var(--color-primary);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            background-color: var(--color-text-light);
+        }
+        
+        iframe {
+            width: 100%;
+            height: 80vh; /* Aumentado para más espacio */
+            border: none;
+            display: block;
+        }
+
+        /* Medias Queries más sencillas - MODIFICADO */
+        @media (max-width: 600px) {
+            .portfolio-grid {
+                gap: 8px; /* Menos espacio en móvil */
+            }
+            .portfolio-item {
+                width: 20%; /* Permite más por fila */
+                height: 40px; /* Altura muy reducida */
+                font-size: 0.8em;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Portafolioooooo 🛠️</h1>
+
+        <div class="portfolio-grid">
+            <a href="ejercicio 3.html" target="vista_previa" class="portfolio-item">#1</a>
+            <a href="ejercicio 4.html" target="vista_previa" class="portfolio-item">#2</a>
+            <a href="ejercicio 5.html" target="vista_previa" class="portfolio-item">#3</a>
+            <a href="ejercicio 7.html" target="vista_previa" class="portfolio-item">#4</a>
+            <a href="ejercicio 9.html" target="vista_previa" class="portfolio-item">#5</a>
+            <a href="ejercicio 10.html" target="vista_previa" class="portfolio-item">#6</a>
+            <a href="ejercicio 11.html" target="vista_previa" class="portfolio-item">#7</a>
+            <a href="ejercicio 13.html" target="vista_previa" class="portfolio-item">#8</a>
+            <a href="ejercicio 15.html" target="vista_previa" class="portfolio-item">#9</a>
+            <a href="ejercicio 15.html" target="vista_previa" class="portfolio-item">#10</a>
+            <a href="ejercicio 15.html" target="vista_previa" class="portfolio-item">#11</a>
+            <a href="ejercicio 15.html" target="vista_previa" class="portfolio-item">#12</a>
+            <a href="ejercicio 15.html" target="vista_previa" class="portfolio-item">#13</a>
+            <a href="ejercicio 15.html" target="vista_previa" class="portfolio-item">#14</a>
+            <a href="ejercicio 15.html" target="vista_previa" class="portfolio-item">#15</a>
+            <a href="ejercicio 15.html" target="vista_previa" class="portfolio-item">#16</a>
+            <a href="ejercicio 15.html" target="vista_previa" class="portfolio-item">#17</a>
+            <a href="ejercicio 15.html" target="vista_previa" class="portfolio-item">#18</a>
+            <a href="ejercicio 15.html" target="vista_previa" class="portfolio-item">#19</a>
+            <a href="ejercicio 15.html" target="vista_previa" class="portfolio-item">#20</a>
+        </div>
+
+
+        <div class="preview-container">
+            <iframe name="vista_previa" srcdoc="<h2 style='text-align:center; margin-top: 50px; color: #7f8c8d;'>⬅️ Selecciona un ejercicio para ver el resultado aquí.</h2>"></iframe>
+        </div>
+
+    </div>
+
+</body>
+</html>
